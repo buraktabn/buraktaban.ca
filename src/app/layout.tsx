@@ -9,6 +9,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://buraktaban.ca"),
   title: "Burak Taban - Software Engineer",
   description: "Software Engineer • Systems Thinker • Infrastructure Builder",
   keywords: [
