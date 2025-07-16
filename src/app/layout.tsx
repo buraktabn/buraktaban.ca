@@ -1,6 +1,10 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+
+import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -64,11 +68,13 @@ type IRootLayoutProps = {
 export default function RootLayout({ children }: IRootLayoutProps) {
   return (
     <html lang="en" className="dark">
+      <GoogleTagManager gtmId={process.env.GTM_ID || "GTM-KSSCSKBP"} />
       <body
         className={`${jetbrainsMono.variable} font-mono antialiased bg-black text-green-400`}
       >
         {children}
       </body>
+      <GoogleAnalytics gaId={process.env.GA_ID || "G-J5PFCLFT9N"} />
     </html>
   );
 }
