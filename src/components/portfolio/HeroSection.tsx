@@ -3,9 +3,9 @@ export function HeroSection() {
     <section className="space-y-4">
       <div className="text-2xl glow-text">{"> whoami"}</div>
       <div className="pl-4 space-y-2">
-        <h1 className="text-4xl font-bold text-purple-400 glow-text">
+        <h2 className="text-4xl font-bold text-purple-400 glow-text">
           Hi, I&apos;m Burak 👋
-        </h1>
+        </h2>
         <div className="text-xl text-green-300">
           Software Engineer • Systems Thinker • Infrastructure Builder
         </div>
